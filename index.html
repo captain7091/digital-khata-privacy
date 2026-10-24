@@ -9,41 +9,67 @@
     h1 { font-family: "Segoe UI", sans-serif; font-size: 2rem; }
     h2 { font-family: "Segoe UI", sans-serif; font-size: 1.15rem; margin-top: 2rem; }
     a { color: #0f6e56; }
+    .urdu { direction: rtl; text-align: right; font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, sans-serif; line-height: 2; border-top: 1px solid #e3ded3; margin-top: 2.5rem; padding-top: 1rem; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p>Digital Khata<br>Last updated: 17 October 2026</p>
-  <p>This policy explains what Digital Khata does with information when you use the Android app. Digital Khata is a personal notebook for income, expenses, savings, budgets, bills, and shopkeeper credit. It is not a bank and it is not formal accounting software.</p>
-  <p>The developer is inam Ullah. Contact: <a href="mailto:uinam4534@gmail.com">uinam4534@gmail.com</a>.</p>
+  <p>Digital Khata<br>Last updated: 24 October 2026</p>
+  <p>This policy explains what Digital Khata does with information when you use the Android app. Digital Khata is a personal notebook for income, expenses, savings, budgets, bills, and shopkeeper credit (udhaar). It is not a bank and it is not formal accounting software.</p>
+  <p>The developer is inam Ullah. Contact: <a href="mailto:uinam5434@gmail.com">uinam5434@gmail.com</a>.</p>
 
   <h2>Account</h2>
-  <p>You sign in with an email address and password before you can use the app. The account is created and checked through Google Firebase Authentication. We use the email address to open your khata, keep your records with that account, and let you sign in again on a phone.</p>
+  <p>You sign in before you can use the app. You can create an account in one of two ways:</p>
+  <ul>
+    <li><strong>Mobile number:</strong> your name, your country calling code and mobile number, and a PIN of 4 to 6 digits that you choose. No SMS code is sent, so we do not check that you own the number.</li>
+    <li><strong>Email:</strong> your name (optional), your email address, and a password.</li>
+  </ul>
+  <p>The account is created and checked through Google Firebase Authentication. Firebase gives your account a user id. We use your mobile number or email to sign you in, your user id to keep your records with your account, and your name to greet you in the app and to sign the khata statements you choose to send. Your PIN or password is checked by Firebase. We never see it and it is not stored in the app.</p>
+  <p>You stay signed in on your phone until you sign out.</p>
 
   <h2>Information you enter</h2>
-  <p>The amounts, categories, notes, dates, accounts, savings goals, budgets, bill reminders, and shopkeeper credit that you type are stored in Google Cloud Firestore, in a private area for your user id. Other people cannot read those records. We use them only to show your khata, calculate totals, and make the PDF or Excel file you choose to export.</p>
+  <p>The amounts, categories, notes, dates, accounts, savings goals, budgets, bill reminders, and shopkeeper credit that you type are saved on your phone and backed up to Google Cloud Firestore, in a private area for your user id. Other people cannot read those records. We use them only to show your khata, calculate totals and reports, remind you about bills, and make the PDF or Excel file you choose to export.</p>
+  <p>If you add a customer or supplier, the name, mobile number, and note you enter for them are saved in your khata in the same way. We use that number only to start a call or a WhatsApp message from your phone when you tap Call or WhatsApp. We never contact them ourselves.</p>
   <p>The app does not connect to your bank and does not ask for a bank password, card number, or national identity number.</p>
 
+  <h2>Sharing statements</h2>
+  <p>When you tap Share or WhatsApp, the app prepares a text statement and opens WhatsApp or your phone's share menu. You decide whether to send it. What happens after that is covered by the policy of the app you send it with.</p>
+
   <h2>Photos</h2>
-  <p>If you attach a receipt photo, that photo stays on the phone. It is not uploaded with the cloud backup.</p>
+  <p>If you attach a receipt photo, that photo stays on the phone in the app's private storage. It is not uploaded with the cloud backup, and it is removed if you uninstall the app.</p>
 
   <h2>Microphone</h2>
-  <p>The microphone is optional. If you use it, your phone’s speech service turns speech into text. Digital Khata does not send that text to a separate paid AI service, and it does not keep the recording. Nothing is saved until you review the text and tap Save.</p>
+  <p>The microphone is optional. If you use it, your phone's speech service turns speech into text. Digital Khata does not send that text to a separate AI service, and it does not keep the recording. Nothing is saved until you review the text and tap Save.</p>
 
-  <h2>Lock on this phone</h2>
-  <p>A PIN or fingerprint lock, if you turn it on, stays on that phone. The PIN is stored as a salted hash, not as the original digits.</p>
+  <h2>Kept only on this phone</h2>
+  <ul>
+    <li>Your chosen language, and the mobile number or email you last signed in with, so the sign-in screen can fill it in for you. Your PIN or password is not kept.</li>
+    <li>An app lock PIN or fingerprint lock, if you turn it on. The PIN is stored as a salted hash, not as the original digits.</li>
+    <li>Bill reminders are scheduled as notifications on the phone.</li>
+  </ul>
 
   <h2>What leaves the phone</h2>
-  <p>Your email and the records you save are sent to Firebase, which is operated by Google, so the app can sign you in and keep your khata. The connection uses HTTPS. Google processes that data as the service that hosts authentication and the database. We do not sell your information, and the app has no advertising.</p>
-  <p>Signing out removes the saved copy of your khata from that phone. The account copy remains in Firebase until you delete the account.</p>
+  <p>Your name, your mobile number or email, your user id, and the records you save are sent to Firebase, which is operated by Google, so the app can sign you in and keep your khata. The connection uses HTTPS. Google processes that data as the service that hosts authentication and the database. We do not sell your information, we do not share it with anyone else, and the app has no advertising and no analytics.</p>
+  <p>Before you sign out, the app saves your entries to your account and warns you if something could not be saved. Signing out then removes the copy of your khata from that phone. The account copy remains in Firebase until you delete it.</p>
 
   <h2>How long it is kept</h2>
-  <p>Records stay in your account until you delete them or delete the account. To delete the account and the cloud copy, open More, then Backup and Restore, then Account, then “Delete account and cloud data”.</p>
+  <p>Records stay in your account until you delete them or delete the account.</p>
+  <p>When you delete an entry in the app, it disappears from your khata and totals straight away. So that you can undo it, it stays in your account marked as deleted and can be restored from More, then Recently deleted, for 30 days. To have deleted entries or any other data removed completely while keeping your account, follow the steps on the <a href="https://captain7091.github.io/digital-khata-help/delete-data/">data deletion page</a>.</p>
+
+  <h2>Deleting your account</h2>
+  <p>To delete your account and all of its data, open the app, tap More, tap your name at the top, then tap "Delete my account and all data". This deletes the account and the cloud copy right away. If you cannot use the app, email <a href="mailto:uinam5434@gmail.com">uinam5434@gmail.com</a> and we will delete it within 7 days. The steps are also on the <a href="https://captain7091.github.io/digital-khata-help/delete-account/">account deletion page</a>.</p>
 
   <h2>Children</h2>
   <p>Digital Khata is not made for children under 18, and we do not knowingly collect information from children.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+  <div class="urdu" lang="ur">
+    <h2>خلاصہ (اردو میں)</h2>
+    <p>ڈیجیٹل کھاتہ آپ کا نام، موبائل نمبر یا ای میل، اور آپ کے لکھے ہوئے اندراج (خرچ، آمدنی، بچت، بجٹ، بل، دکان کا ادھار) آپ کے اپنے نجی آن لائن اکاؤنٹ (گوگل فائر بیس) میں محفوظ کرتا ہے تاکہ فون بدلنے پر بھی آپ کا کھاتہ واپس آ جائے۔ یہ ڈیٹا کسی اور کو نہیں دیا جاتا اور نہ بیچا جاتا ہے۔ ایپ میں اشتہار نہیں ہیں۔</p>
+    <p>رسید کی تصویریں صرف آپ کے فون میں رہتی ہیں۔ ایپ آپ کے بینک سے نہیں جڑتی اور بینک کا پاس ورڈ نہیں مانگتی۔</p>
+    <p>اکاؤنٹ مٹانے کے لیے: ایپ میں "مزید" ← اپنا نام ← "میرا اکاؤنٹ اور سارا ڈیٹا مٹائیں"۔ یا <a href="mailto:uinam5434@gmail.com">uinam5434@gmail.com</a> پر ای میل کریں۔</p>
+  </div>
 </body>
 </html>
